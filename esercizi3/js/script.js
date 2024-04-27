@@ -1,38 +1,39 @@
        //                  ------------------esercizio 1------------ 
-       const array = [1,4,43,68,5,23]
+       const dataArray = [1,4,43,68,5,23]
 
-       cost averageArrey =()=>{
+       function averageArrey (array) {
+
         let sumArray=0
        for(let number of array){
             sumArray += number;
         } 
         return sumArray/array.length;
        };
-
-       console.log(la media è + (averageArray)) 
+const averageDataArray = averageArrey(dataArray)
+       console.log("la media è" + averageDataArray ) 
 
 
                     //      ------------eservizio 2------------
        
-        cons img = document.querySelector(".root");
-
-        const imgGeneraton =(imgurl) => {
+        const postoImg = document.querySelector(".root");
+      
+        function imgGeneraton (imgurl,title,divdestinazione)  {
             const imgEl = document.createElement("img");
 
             imgEl.src = imgurl;
             imgEl.alt = title;
 
-          return imgEl;
+          divdestinazione.append(imgEl)
         }
 
-        const img1("https://picsum.photos/200/300")
-        const img2("https://picsum.photos/200/300")
+        const img1="https://picsum.photos/200/300"
+        const img2="https://picsum.photos/200/300"
 
-        img.append(img1,img2)    
+         imgGeneraton(img1,"text",postoImg)
 
                     //---------------- esercizio3----------
 
-       cost rootEl = document.querySelector(".root");
+       const rootEl = document.querySelector(".root");
 
        const weatherCardGen = (title,temperature,img)=>{
         const cardEl=document.createElement("div")
@@ -43,8 +44,9 @@
 
         cardEl.className = "card";
         imgEl.className = "cardimg";
-        titleEl.textContent = "title";
-        temperatureEl.textContent = "temperature"
+        imgEl.src = img
+        titleEl.textContent = title;
+        temperatureEl.textContent = temperature
 
         cardEl.append(imgEl,titleEl,temperatureEl)
 
