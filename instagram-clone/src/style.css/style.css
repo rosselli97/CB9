@@ -1,0 +1,62 @@
+/* src/styles.css */
+
+/* Stili generali */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  nav h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+  }
+  
+  /* PostList */
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Post */
+  .post {
+    margin: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 300px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .post p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #262626;
+  }
+  
+  .post p strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
